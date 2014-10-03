@@ -1,0 +1,39 @@
+# Remake of my Octopress Blog completely in Jekyll!
+title: tamouse pages
+email: tamouse@gmail.com
+description: > 
+  The rumblings and ramblings of a well-traveled tech-mouse.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blog.tamouse.org"
+twitter_username: tamouse
+github_username:  tamouse
+
+# Build settings
+source: source
+destination: public
+permalink: pretty
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-archives
+
+markdown: kramdown
+kramdown:
+  input: GFM # Githup Flavoured Markdown
+  hard_wrap: false
+  
+highlighter: pygments
+lsi: false
+
+defaults:
+  author: "Tamara Temple"
+
+jekyll-archives:
+  layout: default
+  enabled:
+    - categories
+
+paginate: 15
+
+images:
+  s3path: "http://tt.imageshare.s3.amazonaws.com/"
