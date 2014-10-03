@@ -5,7 +5,11 @@ A template for a new jekyll site with stuff setup how I prefer it.
     $ mkdir new_jekyll_site
     $ cd new_jekyll_site
     $ wget https://github.com/tamouse/jekyll_template/archive/master.zip
-    $ unzip master
+    $ unzip master.zip
+    $ rm master.zip
+    $ git init
+    $ git add --all --verbose
+    $ git commit -m 'Initial Commit, let the Jekylling begin!'
 
 # Usage
 
